@@ -4,59 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet"> 
     <title>Pets Calculator</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <section class="section-main">
-        <div class="container">
-            <div class="main-conteiner">
-                <div class="title">
-                    <h1>Pets Calculator</h1>
-                    <p>¿Quieres saber a cuantos años equivale la edad de tu mascota? <span>¡VAMOS A JUGAR!</span></p>
-                </div>
-                <div class="title">
-                    <h2>¿Qué mascota tienes?</h2>
-                </div>
-                <div class="items-pets">
-                    <div class="items">
-                        <div class="item">
-                            <a class="button-item"><i class="fas fa-dog"></i></a>
-                            <a class="button-item"><i class="fas fa-cat"></i></a>
-                            <a class="button-item"><i class="fas fa-spider"></i></a>
-                            <a class="button-item"><i class="fas fa-turtle"></i></a>
-                            <a class="button-item"><i class="fas fa-fish"></i></a>
-                            <a class="button-item"><i class="fas fa-dragon"></i></a>
-                            <a class="button-item"><i class="fas fa-otter"></i></a>
-                            <a class="button-item"><i class="fas fa-duck"></i></a>
-                            <a class="button-item"><i class="fas fa-squirrel"></i></a>
-                            <a class="button-item"><i class="fas fa-snake"></i></a>
-                            <a class="button-item"><i class="fad fa-alicorn"></i></a>
-                            <a class="button-item"><i class="fad fa-deer"></i></a>
-                            <a class="button-item"><i class="fas fa-whale"></i></a>
-                            <a class="button-item"><i class="fas fa-monkey"></i></a>
-                            <a class="button-item"><i class="fas fa-egg"></i></a>
-                        </div>
+    <!--BODY-->
+    <div class="container">
+        <!--HOME-->
+        <div class="cont__section">
+            <div class="cont-bg"></div>
+            <section id="home" class="section-entry section">
+                <div class="container-item">
+                    <div class="cont__entry-title">
+                        <h1 class="entry-title">Pets Calculator</h1>
+                    </div>
+                    <form class="cont__input">
+                        <label class="input-txt">¿Cómo se llama?</label>
+                        <input class="entry-input" type="text" placeholder="Nombre">   
+                        <label class="input-txt">¿Cómo se porta?</label>
+                        <input class="entry-input" type="text" placeholder="Nombre"> 
+                        <label class="input-txt">¿Cúal es su comida favorita?</label>
+                        <input class="entry-input" type="text" placeholder="Nombre"> 
+                        <button class="btn-send">¡Continuar!</button>                     
+                    </form>
+                    <div class="cont__next-step">
+                        <button class="step active" href="#type">Imprimir DNI</button>
                     </div>
                 </div>
-                <div class="convertor">
-                    <div class="cards">
-                        <div class="card">
-                            <p>¿Cuantos años tiene tu mascota? 🤔</p>
-                            <input type="text">
-                            <button>Convertir</button>
-                        </div>
-                        <div class="card">
-                            <p>¡Qué! 😮 entonces, tu mascota tiene:</p>
-                            <input type="text">
-                            <button>Limpiar</button>
-                        </div>
+            </section>
+            <!--TYPE-->
+            <section id="type" class="section-type section">
+                <div class="container-item">
+                    <div class="cont__title">
+                        <h3 class="item-title">¿ladra o ronronea?</h3>
+                    </div>
+                    <div class="cont__btn">
+                        <a class="button-item"><i class="fas fa-dog"></i></a>
+                        <a class="button-item"><i class="fas fa-cat"></i></a>
                     </div>
                 </div>
-            </div>
+                <div class="cont__next-step">
+                    <a class="step active" href="#home"><i class="fa fa-arrow-left"></i></a>
+                    <a class="step active" href="#age"><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </section>
+            <!--AGE-->
+            <section id="age" class="section-age section">
+                <div class="container-item">
+                    <div class="cont__title">
+                        <h3 class="item-title">¿tiene más de un año?</h3>
+                    </div>
+                    <div class="cont__btn">
+                        <a class="btn">si</a>
+                        <a class="btn">no</a>
+                    </div>
+                    <div class="cont__next-step">
+                        <a class="step active" href="#type"><i class="fa fa-arrow-left"></i></a>
+                        <a class="step active" href="#years"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--YEARS-->
+            <section id="years" class="section-years section">
+                <div class="container-item">
+                    <div class="cont__title">
+                        <h3 class="item-title">¿cuántos años tiene</h3>
+                    </div>
+                    <div class="cont__input">
+                        <input class="entry-input" type="text">
+                    </div>
+                    <div class="cont__btn">
+                        <a class="btn" href="#">1</a>
+                        <a class="btn" href="#">2</a>
+                        <a class="btn" href="#">3</a>
+                        <a class="btn" href="#">4</a>
+                        <a class="btn" href="#">5</a>
+                        <a class="btn" href="#">6</a>
+                        <a class="btn" href="#">7</a>
+                        <a class="btn" href="#">8</a>
+                        <a class="btn" href="#">9</a>
+                        <a class="btn" href="#">0</a>
+                    </div>
+                    <div class="cont__next-step">
+                        <a class="step active" href="#age"><i class="fa fa-arrow-left"></i></a>
+                        <a class="step active" href="#exit"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--MONTHS-->
+            <section id="months" class="section-months section">
+                <div class="container-item">
+                    <div class="cont__title">
+                        <h3 class="item-title">¿cuántos meses tiene?</h3>
+                    </div>
+                    <div class="cont__input">
+                        <input class="entry-input" type="text">
+                    </div>
+                    <div class="cont__btn">
+                        <a class="btn" href="#">1</a>
+                        <a class="btn" href="#">2</a>
+                        <a class="btn" href="#">3</a>
+                        <a class="btn" href="#">4</a>
+                        <a class="btn" href="#">5</a>
+                        <a class="btn" href="#">6</a>
+                        <a class="btn" href="#">7</a>
+                        <a class="btn" href="#">8</a>
+                        <a class="btn" href="#">9</a>
+                        <a class="btn" href="#">0</a>
+                    </div>
+                    <div class="cont__next-step">
+                        <a class="step active" href="#age"><i class="fa fa-arrow-left"></i></a>
+                        <a class="step active" href="#exit"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--EXIT-->
+            <section id="exit" class="section-exit section">
+                <div class="container-item">
+                    <div class="cont__exit-title">
+                        <div class="cont__entry-title">
+                            <h2 class="entry-title">Tobby tiene:</h2>
+                        </div>
+                        <div class="cont__input">
+                            <input class="entry-input" type="text">
+                            <p class="input-txt">años humanos.</p>
+                        </div>
+                        <div class="dni">
+                            <div class="cont__link">
+                                <a href="#dni">DNI</a>
+                            </div>
+                            <div class="cont__arrow">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="cont__next-step">
+                            <a class="step active" href="#age"><i class="fa fa-arrow-left"></i></a>
+                            <a class="step active" href="#home"><i class="fa fa-home"></i></a>
+                        </div>                    
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-    <script src="app/app.js"></script>
+    </div>
+
+    <script src="./app/app.js"></script>
 </body>
 </html>

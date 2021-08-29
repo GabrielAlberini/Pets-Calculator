@@ -2,18 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
-h1, h2 {
-font-size: 30px;
-font-weight: 600;
-text-align: center;
-color: $colorText;
+body {
+  background-color: rgb(233, 233, 233);
+  position: relative;
 }
 
-p {
-  text-align: center;
-  line-height: 40px;
-  color: $colorText;
+.cont-bg {
+  width: 360px;
+  height: 740px;
+  position: absolute;
+  background-image: url(https://cdn.wallpapersafari.com/12/98/gOwvmV.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: .8;
+  border-radius: 20px;
 }
